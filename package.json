@@ -1,0 +1,21 @@
+{
+  "name": "codex-review",
+  "version": "2.0.0",
+  "type": "module",
+  "bin": {
+    "codex-review": "./src/cli.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "review": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "yaml": "^2.7.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "tsx": "^4.19.4",
+    "vitest": "^3.1.1"
+  }
+}
