@@ -1,0 +1,36 @@
+reviewers:
+  codex:
+    weight: 1.0
+    model: gpt-5.3-codex
+    max_files: 20
+    enabled: true
+  gemini:
+    weight: 0.5
+    max_files: 50
+    enabled: true
+  claude:
+    weight: 1.0
+    max_files: 50
+    enabled: true
+
+thresholds:
+  confidence_min: 70
+  consensus_weight: 1.5
+  max_issues_per_reviewer: 15
+
+debate:
+  max_contested_items: 10
+  timeout_seconds: 300
+
+output:
+  directory: reviews
+  show_confidence_scores: true
+  show_severity_disagreements: true
+
+categories:
+  - bug
+  - security
+  - architecture
+  - performance
+  - testing
+  - style
