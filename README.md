@@ -52,12 +52,26 @@ claude --plugin-dir ./codex-review
 
 ## Usage
 
+### Via Claude Code plugin
+
 ```
 /codex-review:codex-review                              # Auto-detect context
 /codex-review:codex-review src/server/pipeline.py       # Review specific file(s)
 /codex-review:codex-review --plan docs/plans/design.md  # Review a plan
 /codex-review:codex-review --pr                         # Review current PR
 /codex-review:codex-review --diff                       # Review uncommitted changes
+```
+
+### Via TypeScript CLI (direct)
+
+```bash
+npx tsx src/cli.ts              # auto-detect (diff → PR → plan → branch-diff)
+npx tsx src/cli.ts --diff       # review uncommitted changes
+npx tsx src/cli.ts --pr         # review current PR
+npx tsx src/cli.ts --plan FILE  # review a plan document
+npx tsx src/cli.ts --files a.ts b.ts  # review specific files
+npx tsx src/cli.ts --no-debate  # skip debate phase
+npx tsx src/cli.ts --confidence 80    # custom confidence threshold
 ```
 
 ### Context Auto-Detection
