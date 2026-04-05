@@ -34,7 +34,7 @@ After independent reviews, findings are merged using weighted consensus. Contest
 
 ```bash
 # Add the marketplace
-/plugin marketplace add <your-github-username>/codex-review
+/plugin marketplace add moremeds/codex-review
 
 # Install the plugin
 /plugin install codex-review@codex-review
@@ -44,7 +44,7 @@ After independent reviews, findings are merged using weighted consensus. Contest
 
 ```bash
 # Clone the repo
-git clone https://github.com/<your-github-username>/codex-review.git
+git clone https://github.com/moremeds/codex-review.git
 
 # Test locally
 claude --plugin-dir ./codex-review
