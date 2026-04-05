@@ -1,0 +1,14 @@
+{
+  "name": "codex-review",
+  "owner": {
+    "name": "chenxi"
+  },
+  "plugins": [
+    {
+      "name": "codex-review",
+      "source": ".",
+      "description": "Three-way AI tribunal code review using Codex, Gemini, and Claude with weighted consensus, structured debate, and rebuttal phases.",
+      "version": "1.0.0"
+    }
+  ]
+}

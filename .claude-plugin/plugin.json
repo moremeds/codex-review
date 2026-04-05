@@ -1,0 +1,10 @@
+{
+  "name": "codex-review",
+  "description": "Three-way AI tribunal code review using Codex, Gemini, and Claude with weighted consensus, structured debate, and rebuttal phases.",
+  "version": "1.0.0",
+  "author": {
+    "name": "chenxi"
+  },
+  "repository": "https://github.com/chenxi/codex-review",
+  "license": "MIT"
+}
