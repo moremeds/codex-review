@@ -1,19 +1,21 @@
 === PROJECT CONTEXT ===
-{project_context}
+{{project_context}}
 
 === CODING STANDARDS ===
-{coding_standards}
+{{coding_standards}}
 
-=== REVIEW TARGET ({review_mode}) ===
-{review_content}
+=== REVIEW TARGET ({{review_mode}}) ===
+{{review_content}}
 
 === INSTRUCTIONS ===
-You are performing a code review. Analyze the above {review_type} carefully.
+{{specialization_preamble}}
+
+You are performing a code review. Analyze the above {{review_mode}} carefully.
 
 For each issue found, output in this EXACT format:
 
 ISSUE-N [SEVERITY] file:line — Title
-  Category: [bug|security|architecture|performance|testing|style]
+  Category: [{{categories}}]
   Confidence: [0-100]
   Reasoning: Why this is a problem (cite specific code, explain the risk)
   Suggestion: What to do instead (concrete, actionable, not vague)
@@ -24,7 +26,7 @@ Severity levels:
 - MINOR: Style, naming, optimization opportunities, documentation gaps
 
 Rules:
-- Only raise issues with Confidence >= 50 — no speculative warnings
+- Only raise issues with Confidence >= {{confidence_threshold}} — no speculative warnings
 - Be specific: reference file paths and line numbers
 - Explain WHY something is a problem, not just WHAT
 - If the code/plan is solid, say "No issues found" — don't invent problems
