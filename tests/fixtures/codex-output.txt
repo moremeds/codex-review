@@ -1,0 +1,11 @@
+ISSUE-1 [CRITICAL] src/cli.ts:42 — Unchecked null return from getConfig
+  Category: bug
+  Confidence: 92
+  Reasoning: getConfig() returns undefined when file missing, but caller assumes non-null.
+  Suggestion: Add null check with default fallback.
+
+ISSUE-2 [MINOR] src/types.ts:10 — Unused Severity import
+  Category: style
+  Confidence: 55
+  Reasoning: Imported but never referenced in this file.
+  Suggestion: Remove unused import.

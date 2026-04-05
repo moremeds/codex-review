@@ -1,0 +1,16 @@
+Here is my review of the code:
+
+ISSUE-1 [IMPORTANT] src/foo.ts:5 — Missing error handler
+  Category: bug
+  Confidence: 80
+  Reasoning: The async call has no catch block.
+  Suggestion: Wrap in try-catch.
+
+This next part is garbled and not in the right format.
+Something about line 20 being bad.
+
+ISSUE-3 [CRITICAL] src/bar.ts:99 — SQL injection
+  Category: security
+  Confidence: 95
+  Reasoning: User input concatenated into query string.
+  Suggestion: Use parameterized queries.
