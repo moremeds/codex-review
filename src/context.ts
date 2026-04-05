@@ -4,9 +4,9 @@ import type { CliArgs, ReviewContext } from './types.js';
 
 function exec(cmd: string): string | null {
   try {
-    const result = execSync(cmd, { encoding: 'utf-8', stdio: ['pipe', 'pipe', 'pipe'] });
-    const str = typeof result === 'string' ? result : result.toString('utf-8');
-    return str.trim() || null;
+    const raw = execSync(cmd, { encoding: 'utf-8', stdio: ['pipe', 'pipe', 'pipe'] });
+    const result = typeof raw === 'string' ? raw : (raw as unknown as Buffer).toString('utf-8');
+    return result.trim() || null;
   } catch {
     return null;
   }
