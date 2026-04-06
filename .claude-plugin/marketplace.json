@@ -7,8 +7,8 @@
     {
       "name": "codex-review",
       "source": {
-        "source": "github",
-        "repo": "moremeds/codex-review"
+        "source": "git",
+        "url": "https://github.com/moremeds/codex-review.git"
       },
       "description": "Three-way AI tribunal code review using Codex, Gemini, and Claude with weighted consensus, structured debate, and rebuttal phases.",
       "version": "2.0.0"
